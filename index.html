@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hockey</title>
+  <title>Rinterio</title>
   <!-- tailwind and daisyUI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -20,15 +20,15 @@
     }
   </style>
 </head>
-<body class="manrope-font">
+<body class="manrope-font bg-[#f4f4f4]">
   <!-- header -->
-  <header class="container mx-auto bg-gradient-to-t from-white to-gray-50">
+  <header class="bg-gradient-to-t from-white to-gray-50">
     <!-- navbar -->
-    <nav>
+    <nav class="container mx-auto ">
       <div class="navbar">
         <!-- nav left part -->
         <div class="navbar-start">
-          <div class="p-2 rounded-full bg-[#ABEF5F] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></div>
+          <div class="h-8 w-8 rounded-full p-3 md:p-0 bg-[#ABEF5F] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></div>
           <a class="btn btn-ghost text-3xl font-extrabold text-[#212121]">Rinterio</a>
         </div>
         <!-- nav center part -->
@@ -44,9 +44,9 @@
         <!-- nav right part -->
         <div class="navbar-end">
           <div class="hidden md:flex items-center space-x-7">
-            <div class="p-3 rounded-full bg-white flex items-center justify-center"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div><i class="fa-solid fa-cart-shopping p-3 rounded-full bg-white flex items-center justify-center"></i></div>
-            <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold">Book Consult<div class="p-2 rounded-full bg-[#1C1C1C] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45 text-white"></i></div></i></a>
+            <div class="h-8 w-8 rounded-full bg-white flex items-center justify-center"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><i class="fa-solid fa-cart-shopping h-8 w-8 rounded-full bg-white flex items-center justify-center"></i></div>
+            <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold text-xl">Book Consult<div class="h-8 w-8 rounded-full bg-[#1C1C1C] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45 text-white"></i></div></a>
           </div>
           <div class="dropdown relative">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-2 rounded-full bg-white flex items-center justify-center ml-5">
@@ -79,7 +79,7 @@
       </div>
     </nav>
     <!-- banner -->
-    <div class="banner mt-5 mb-10 md:mt-10 md:mb-20">
+    <div class="container mx-auto  mt-5 pb-10 md:mt-10 md:pb-20">
       <!-- banner image -->
       <div class="flex flex-col justify-center items-center">
         <img src="assets/banner.png" alt="" class="w-[260px] md:w-[425px] lg:w-[570px]">
@@ -88,12 +88,59 @@
       <div class="w-4/5 mx-auto space-y-6 text-center">
         <h1 class="text-3xl md:text-4xl lg:text-7xl font-extrabold">A barn house of this design has a striking appearance</h1>
         <p class="text-sm md:text-base font-medium">Explore custom home designs, expert construction services, and innovative building solutions to create your dream home. Start your journey to a beautifully crafted living space with us</p>
-        <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold bg-opacity-50">View Details<div class="p-2 rounded-full bg-[#ABEF5F] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45 text-black"></i></div></i></a>
+        <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold bg-opacity-50 text-sm w-full md:w-[180px]">View Details<div class="h-8 w-8 rounded-full bg-[#ABEF5F] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45 text-black"></i></div></a>
       </div>
     </div>
   </header>
   
-  <main></main>
+  <main class="lg:mt-24">
+    <!-- design section -->
+    <section class="container mx-auto flex justify-between items-center flex-col lg:flex-row lg:gap-10 relative p-3 space-y-6 lg:space-y-0">
+      <!-- design content -->
+      <div class="lg:w-[45%] space-y-6 text-left">
+        <!-- design content image -->
+        <div class="hidden lg:flex lg:absolute lg:-top-8 lg:-left-12">
+          <img src="assets/Vector.png" alt="">
+        </div>
+        <!-- design content text -->
+        <div class="text-center lg:text-left space-y-6">
+          <a class="btn bg-white rounded-3xl font-extrabold
+          px-6"><i class="fa-solid fa-arrow-right"></i>About Us</a>
+          <h1 class="text-3xl lg:text-5xl font-bold text-[#212121]">We design thoughtful, liveable spaces</h1>
+          <p class="text-base font-medium">Discover our extensive design options, from modern to classic styles, tailored to fit your vision.</p>
+        <!-- content card -->
+        </div>
+        <div class="flex items-start lg:items-center gap-6 bg-[#FFFFFF] p-6 rounded-lg">
+          <!-- card image -->
+          <div class="w-[40%] md:w-[30%] lg:w-auto">
+            <img src="assets/commercial.png" alt="">
+          </div>
+          <div class="space-y-2">
+            <h5 class="text-base md:text-xl font-extrabold text-[#494949]">Commercial</h5>
+            <p class="text-sm lg:text-base text-[#737373]">We work for desgining beautiful commercial buildings for you and your company at lowest cost possible.</p>
+          </div>
+        </div>
+        <!-- content card -->
+        <div class="flex items-start lg:items-center gap-6 bg-[#FFFFFF] p-6 rounded-lg">
+          <!-- card image -->
+          <div class="w-[40%] md:w-[30%] lg:w-auto">
+            <img src="assets/residential.png" alt="">
+          </div>
+          <div class="space-y-2">
+            <h5 class="text-base md:text-xl font-extrabold text-[#494949]">Residential</h5>
+            <p class="text-sm lg:text-base text-[#737373]">We work for desgining beautiful residential buildings for you and your family at lowest cost possible.</p>
+          </div>
+        </div>
+      </div>
+      <!-- design image -->
+      <div class="w-full lg:w-[50%] flex lg:justify-end">
+        <img src="assets/Rectangle.png" alt="" class="w-full h-[225px] md:h-[385px] md:w-full lg:w-auto lg:h-auto">
+      </div>
+    </section>
+
+
+    <section class="h-52"></section>
+  </main>
   <footer></footer>
 </body>
 </html>
