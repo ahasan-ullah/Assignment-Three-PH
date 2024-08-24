@@ -9,10 +9,91 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/8f7b27f9d3.js" crossorigin="anonymous"></script>
-  <!-- additional css -->
-  <link rel="stylesheet" href="style/style.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- manual style -->
+  <style>
+    .manrope-font{
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
-<body>
+<body class="manrope-font">
+  <!-- header -->
+  <header class="container mx-auto bg-gradient-to-t from-white to-gray-50">
+    <!-- navbar -->
+    <nav>
+      <div class="navbar">
+        <!-- nav left part -->
+        <div class="navbar-start">
+          <div class="p-2 rounded-full bg-[#ABEF5F] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></div>
+          <a class="btn btn-ghost text-3xl font-extrabold text-[#212121]">Rinterio</a>
+        </div>
+        <!-- nav center part -->
+        <div class="navbar-center hidden lg:flex ">
+          <ul class="menu menu-horizontal px-1 text-base space-x-5">
+            <li class="text-[#494949] font-extrabold"><a>Home</a></li>
+            <li class="text-[#737373] font-normal"><a>Services</a></li>
+            <li class="text-[#737373] font-normal"><a>Portfolio</a></li>
+            <li class="text-[#737373] font-normal"><a>Blog</a></li>
+            <li class="text-[#737373] font-normal"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- nav right part -->
+        <div class="navbar-end">
+          <div class="hidden md:flex items-center space-x-7">
+            <div class="p-3 rounded-full bg-white flex items-center justify-center"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><i class="fa-solid fa-cart-shopping p-3 rounded-full bg-white flex items-center justify-center"></i></div>
+            <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold">Book Consult<div class="p-2 rounded-full bg-[#1C1C1C] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45 text-white"></i></div></i></a>
+          </div>
+          <div class="dropdown relative">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-2 rounded-full bg-white flex items-center justify-center ml-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <div class="absolute right-52">
+              <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li class="text-[#494949] font-extrabold"><a>Home</a></li>
+              <li class="text-[#737373] font-normal"><a>Services</a></li>
+              <li class="text-[#737373] font-normal"><a>Portfolio</a></li>
+              <li class="text-[#737373] font-normal"><a>Blog</a></li>
+              <li class="text-[#737373] font-normal"><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- banner -->
+    <div class="banner mt-5 mb-10 md:mt-10 md:mb-20">
+      <!-- banner image -->
+      <div class="flex flex-col justify-center items-center">
+        <img src="assets/banner.png" alt="" class="w-[260px] md:w-[425px] lg:w-[570px]">
+      </div>
+      <!-- banner content -->
+      <div class="w-4/5 mx-auto space-y-6 text-center">
+        <h1 class="text-3xl md:text-4xl lg:text-7xl font-extrabold">A barn house of this design has a striking appearance</h1>
+        <p class="text-sm md:text-base font-medium">Explore custom home designs, expert construction services, and innovative building solutions to create your dream home. Start your journey to a beautifully crafted living space with us</p>
+        <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold bg-opacity-50">View Details<div class="p-2 rounded-full bg-[#ABEF5F] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45 text-black"></i></div></i></a>
+      </div>
+    </div>
+  </header>
   
+  <main></main>
+  <footer></footer>
 </body>
 </html>
