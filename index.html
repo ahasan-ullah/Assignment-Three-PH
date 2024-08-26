@@ -18,6 +18,22 @@
     .manrope-font{
       font-family: "Manrope", sans-serif;
     }
+    /* setting bg opacity */
+    .form-section{
+      overflow: hidden;
+      position: relative;
+    }
+    .form-section>img{
+      opacity: 0.5;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .form-section .content{
+      position: relative;
+    }
   </style>
 </head>
 <body class="manrope-font bg-[#f4f4f4]">
@@ -134,7 +150,7 @@
       </div>
       <!-- design image -->
       <div class="w-full lg:w-[50%] flex lg:justify-end">
-        <img src="assets/Rectangle.png" alt="" class="w-full h-[225px] md:h-[385px] md:w-full lg:w-auto lg:h-auto">
+        <img src="assets/Rectangle.png" alt="" class="w-full h-[225px] md:h-[385px] lg:w-full lg:h-[585px]">
       </div>
     </section>
 
@@ -199,7 +215,7 @@
     </section>
 
     <!-- portfolio section -->
-    <section class="p-3 mt-8 lg:mt-24 bg-[#FFFFFF]">
+    <section class="p-3 mt-8 lg:mt-24 bg-[#FFFFFF] md:pb-24 pb-8">
       <div class="container mx-auto">
         <!-- portfolio content text -->
         <div class="text-center space-y-6 mt-8 lg:mt-24">
@@ -286,8 +302,58 @@
       </div>
     </section>
 
-    <section class="h-52"></section>
+    <!-- form section -->
+    <section class="form-section md:pb-24 pb-8">
+      <img src="assets/bg.jpg" alt="">
+      <div class="lg:w-3/4 lg:mx-auto p-3 content">
+        <!-- form content text -->
+        <div class="text-center space-y-6 pt-8 md:pt-24">
+          <a class="btn bg-[#ABEF5F33] rounded-3xl font-extrabold
+          px-6"><i class="fa-solid fa-arrow-right"></i>Lets's Connect</a>
+          <h1 class="text-3xl lg:text-5xl font-extrabold text-[#212121]">Let’s Discuss Next Project</h1>
+          <p class="text-sm md:text-base font-medium">Stay Connected: Let's Build Your Dream Home Together with Personalized Support and Expert Guidance</p>
+        </div>
+        <!-- form inputs -->
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-8 gap-6">
+          <input type="text" placeholder="First Name*" class="input input-bordered rounded-3xl w-full"/>
+          <input type="text" placeholder="Last Name*" class="input input-bordered rounded-3xl w-full"/>
+          <input type="text" placeholder="Phone Number*" class="input input-bordered rounded-3xl w-full"/>
+          <input type="text" placeholder="Email*" class="input input-bordered rounded-3xl w-full"/>
+        </div>
+        <!-- form textarea -->
+        <textarea placeholder="Write your message here" class="textarea textarea-bordered textarea-lg w-full rounded-3xl mt-6" rows="7"></textarea>
+        <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold text-xl mt-6 w-full">Send Mail<div class="h-8 w-8 rounded-full bg-[#1C1C1C] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45 text-white"></i></div></a>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+
+  <footer class="bg-[#1C1C1C] p-8 lg:p-24 mt-2">
+    <div class="flex flex-col items-center justify-between lg:w-2/3 mx-auto space-y-12">
+      <!-- nav left part -->
+      <div>
+        <div class="flex items-center justify-center">
+          <div class="h-8 w-8 rounded-full p-3 md:p-0 bg-[#ABEF5F] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></div>
+          <a class="btn btn-ghost text-3xl font-extrabold text-[#E9E9E9]">Rinterio</a>
+        </div>
+        <p class="text-[#737373] text-sm md:text-base mt-4 text-center">We’re here to help you build your dream home. We are committed to helping you build your dream home with expert guidance and personalized service.</p>
+      </div>
+      <!-- nav center part -->
+      <div >
+        <ul class="flex flex-col md:flex-row md:space-x-12 space-y-6 md:space-y-0">
+          <li class="text-[#E9E9E9] font-extrabold"><a>Home</a></li>
+          <li class="text-[#E9E9E9] font-normal"><a>Services</a></li>
+          <li class="text-[#E9E9E9] font-normal"><a>Portfolio</a></li>
+          <li class="text-[#E9E9E9] font-normal"><a>Blog</a></li>
+          <li class="text-[#E9E9E9] font-normal"><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- nav right part -->
+      <div class="">
+        <div class="md:flex items-center space-x-4">
+          <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold text-xl border-0">Book Consult<div class="h-8 w-8 rounded-full bg-[#1C1C1C] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45 text-white"></i></div></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
