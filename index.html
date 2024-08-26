@@ -22,18 +22,18 @@
 </head>
 <body class="manrope-font bg-[#f4f4f4]">
   <!-- header -->
-  <header class="bg-gradient-to-t from-white to-gray-50">
+  <header class="bg-gradient-to-t from-white to-gray-100">
     <!-- navbar -->
     <nav class="container mx-auto ">
-      <div class="navbar">
+      <div class="navbar justify-between">
         <!-- nav left part -->
-        <div class="navbar-start">
+        <div class="">
           <div class="h-8 w-8 rounded-full p-3 md:p-0 bg-[#ABEF5F] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></div>
           <a class="btn btn-ghost text-3xl font-extrabold text-[#212121]">Rinterio</a>
         </div>
         <!-- nav center part -->
-        <div class="navbar-center hidden lg:flex ">
-          <ul class="menu menu-horizontal px-1 text-base space-x-5">
+        <div class=" hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base space-x-4">
             <li class="text-[#494949] font-extrabold"><a>Home</a></li>
             <li class="text-[#737373] font-normal"><a>Services</a></li>
             <li class="text-[#737373] font-normal"><a>Portfolio</a></li>
@@ -42,9 +42,9 @@
           </ul>
         </div>
         <!-- nav right part -->
-        <div class="navbar-end">
-          <div class="hidden md:flex items-center space-x-7">
-            <div class="h-8 w-8 rounded-full bg-white flex items-center justify-center"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="">
+          <div class="hidden md:flex items-center space-x-4">
+            <div><i class="fa-solid fa-magnifying-glass h-8 w-8 rounded-full bg-white flex items-center justify-center"></i></div>
             <div><i class="fa-solid fa-cart-shopping h-8 w-8 rounded-full bg-white flex items-center justify-center"></i></div>
             <a class="btn bg-[#ABEF5F] rounded-3xl font-extrabold text-xl">Book Consult<div class="h-8 w-8 rounded-full bg-[#1C1C1C] flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45 text-white"></i></div></a>
           </div>
@@ -93,7 +93,7 @@
     </div>
   </header>
   
-  <main class="lg:mt-24">
+  <main class="mt-8 lg:mt-24">
     <!-- design section -->
     <section class="container mx-auto flex justify-between items-center flex-col lg:flex-row lg:gap-10 relative p-3 space-y-6 lg:space-y-0">
       <!-- design content -->
@@ -106,11 +106,11 @@
         <div class="text-center lg:text-left space-y-6">
           <a class="btn bg-white rounded-3xl font-extrabold
           px-6"><i class="fa-solid fa-arrow-right"></i>About Us</a>
-          <h1 class="text-3xl lg:text-5xl font-bold text-[#212121]">We design thoughtful, liveable spaces</h1>
+          <h1 class="text-3xl lg:text-5xl font-extrabold text-[#212121]">We design thoughtful, liveable spaces</h1>
           <p class="text-base font-medium">Discover our extensive design options, from modern to classic styles, tailored to fit your vision.</p>
-        <!-- content card -->
         </div>
-        <div class="flex items-start lg:items-center gap-6 bg-[#FFFFFF] p-6 rounded-lg">
+        <!-- content card 1 -->
+        <div class="flex items-start lg:items-center gap-6 bg-[#FFFFFF] p-6 rounded-2xl">
           <!-- card image -->
           <div class="w-[40%] md:w-[30%] lg:w-auto">
             <img src="assets/commercial.png" alt="">
@@ -120,8 +120,8 @@
             <p class="text-sm lg:text-base text-[#737373]">We work for desgining beautiful commercial buildings for you and your company at lowest cost possible.</p>
           </div>
         </div>
-        <!-- content card -->
-        <div class="flex items-start lg:items-center gap-6 bg-[#FFFFFF] p-6 rounded-lg">
+        <!-- content card 2 -->
+        <div class="flex items-start lg:items-center gap-6 bg-[#FFFFFF] p-6 rounded-2xl">
           <!-- card image -->
           <div class="w-[40%] md:w-[30%] lg:w-auto">
             <img src="assets/residential.png" alt="">
@@ -135,6 +135,66 @@
       <!-- design image -->
       <div class="w-full lg:w-[50%] flex lg:justify-end">
         <img src="assets/Rectangle.png" alt="" class="w-full h-[225px] md:h-[385px] md:w-full lg:w-auto lg:h-auto">
+      </div>
+    </section>
+
+    <!-- work process section -->
+    <section class="container mx-auto p-3 mt-8 lg:mt-24">
+      <div class="space-y-6 text-left">
+        <!-- work process content text -->
+        <div class="text-center space-y-6">
+          <a class="btn bg-white rounded-3xl font-extrabold
+          px-6"><i class="fa-solid fa-arrow-right"></i>How we work</a>
+          <h1 class="text-3xl lg:text-5xl font-bold text-[#212121]">We design thoughtful, liveable spaces</h1>
+          <p class="text-base font-medium">Discover our extensive design options, from modern to classic styles, tailored to fit your vision.</p>
+        </div>
+        <!-- content cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- content card 1 -->
+          <div class="bg-[#E7C1D3] p-6 rounded-2xl space-y-3">
+            <!-- card image -->
+            <div class="">
+              <img src="assets/concept.png" alt="">
+            </div>
+            <div class="space-y-2">
+              <h5 class="text-base md:text-xl font-extrabold text-[#1C1C1C]">Concept</h5>
+              <p class="text-sm lg:text-base text-[#494949]">Build Your Dream Home: Custom Designs and Expert Craftsmanship</p>
+            </div>
+          </div>
+          <!-- content card 2 -->
+          <div class="bg-[#EFDA6E] p-6 rounded-2xl space-y-3">
+            <!-- card image -->
+            <div class="">
+              <img src="assets/flow-chart.png" alt="">
+            </div>
+            <div class="space-y-2">
+              <h5 class="text-base md:text-xl font-extrabold text-[#1C1C1C]">Design Process</h5>
+              <p class="text-sm lg:text-base text-[#494949]">Home Building Process: From Concept to Completion</p>
+            </div>
+          </div>
+          <!-- content card 3 -->
+          <div class="bg-[#A4DAC3] p-6 rounded-2xl space-y-3">
+            <!-- card image -->
+            <div class="">
+              <img src="assets/vision.png" alt="">
+            </div>
+            <div class="space-y-2">
+              <h5 class="text-base md:text-xl font-extrabold text-[#1C1C1C]">Supervision</h5>
+              <p class="text-sm lg:text-base text-[#494949]">Comprehensive Supervision: Ensuring Quality and Precision in Every Build</p>
+            </div>
+          </div>
+          <!-- content card 4 -->
+          <div class="bg-[#77AAEA] p-6 rounded-2xl space-y-3">
+            <!-- card image -->
+            <div class="">
+              <img src="assets/budget-planning.png" alt="">
+            </div>
+            <div class="space-y-2">
+              <h5 class="text-base md:text-xl font-extrabold text-[#1C1C1C]">Budget Planning</h5>
+              <p class="text-sm lg:text-base text-[#494949]">Smart Budget Planning: Building Your Home Within Your Budget</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
